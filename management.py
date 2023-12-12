@@ -20,7 +20,6 @@ preprocessor = RegexProcessor(
     split_respect_sentence_boundary=False
 )
 
-OPENAI_API_KEY='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'
 file_path = 'data/STX_earnings_2023Q1.pdf'
 #document_store = InMemoryDocumentStore(use_bm25=True, embedding_dim=384)
 converter = PDFToTextConverter()

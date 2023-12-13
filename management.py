@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 import re
 from datetime import datetime as dt
-
+from pathlib import Path
 load_dotenv()
 
 
@@ -25,11 +25,11 @@ preprocessor = RegexProcessor(
     split_respect_sentence_boundary=False
 )
 
-file_path = 'data/STX_earnings_2023Q1.pdf'
+file_path = 'data/CRM Q4 2023.pdf'
 #document_store = InMemoryDocumentStore(use_bm25=True, embedding_dim=384)
 converter = PDFToTextConverter()
 
-splits = "QUESTION AND ANSWER SECTION"
+splits = "Questions & Answers:"
 
 doc = converter.convert(file_path)
 full_text = re.split(splits, doc[0].content)
@@ -65,7 +65,7 @@ Key Topic/KPI:
     - Additional Information:
         *
 
-If any products, services, or projects are mentioned, your summary should be much more detailed and include the following information:
+If any products, services, or projects are mentioned your summary should be much more detailed and include the following information:
 
     - Timelines:
     - Future plans and strategy:
@@ -84,7 +84,7 @@ If any products, services, or projects are mentioned, your summary should be muc
 All bullet points should be no more than 10 words
 """
 
-nudge = "Dont forget about the special topics mentioned above"
+nudge = "Dont forget about the special topics mentioned above."
 advice = """
 Notes:
 Each bullet point should be no more than 10 words. Be brief bu be accurate
@@ -112,7 +112,9 @@ output = response['choices'][0]['message']['content']
 output = output.replace('Key Topic/KPI: ', '')
 output = output.replace('Product mentioned: ', '')
 
+print(output)
 
+with open(f"data/output/{Path(file_path).stem}-3.txt", 'w+') as f:
+    f.write(output)
 # dt.now().strftime("%Y%m%d%H%M%S")
 
-print(output)

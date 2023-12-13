@@ -1,0 +1,82 @@
+Revenue
+    - Key Numbers:
+        * Q4 revenue: $8.38 billion, up 14% year over year
+        * Full year revenue: $31.4 billion, up 18% year over year
+    - Drivers of value:
+        * Improvement in operational excellence and automation
+        * Successful integration and performance of acquisitions
+    - Additional Information:
+        * FY '24 revenue guidance: $34.7 billion
+
+Profitability
+    - Key Numbers:
+        * Non-GAAP operating margin for fiscal '23: 22.5%
+        * Expecting non-GAAP operating margin of approximately 27% for FY '24
+    - Drivers of value:
+        * Accelerated transformation plan
+        * Focus on performance, productivity, and accountability
+    - Additional Information:
+        * Goal is to make Salesforce the largest and most profitable software company in the world
+
+Cash Flow
+    - Key Numbers:
+        * Operating Cash Flow for FY '23: $7.1 billion, up 19% year over year
+    - Drivers of value:
+        * Transformation efforts leading to higher operational efficiency
+    - Additional Information:
+        * One of the highest cash flows of any enterprise software company
+
+Product: MuleSoft and Tableau
+    - Timelines: N/A
+    - Future plans and strategy:
+        * Continue to integrate these into core sales and service motions
+        * Aim to drive more customer success
+    - Areas of excitement:
+        * MuleSoft included in seven of top 10 deals in Q4
+        * Tableau included in all top 10 deals in Q4
+    - Challenges: N/A 
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * Efforts to reignite MuleSoft sales growth paying off
+
+Product: Data Cloud
+    - Timelines: N/A
+    - Future plans and strategy:
+        * Aim to make Data Cloud the intelligent heart of customer engagement
+        * To be integrated with all Salesforce clouds
+    - Areas of excitement:
+        * Delivering intelligent, real-time, and automated customer engagement
+        * Notable use cases by customers such as Ford and Boston Scientific
+    - Challenges: N/A
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * Becoming a key part of Salesforce's Customer 360
+
+Product: Slack and Einstein GPT technology
+    - Timelines: N/A
+    - Future plans and strategy:
+        * Integrate into all clouds and offerings
+        * Use as a user interface for AI systems
+    - Areas of excitement:
+        * Opens the door to more AI use cases
+        * Deep integration with other Salesforce products and services
+    - Challenges: N/A
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * Cornerstone of Salesforce's future plans and investment
+
+Board Changes:
+    - Welcoming three new members to the board: Mason Morfit, Arnold Donald, and Sachin Mehra
+    - Thanking outgoing board members: Sandy Robertson and Alan Hassenfeld
+
+Share Repurchase:
+    - Initially announced $10 billion share repurchase plan to offset dilution from stock-based compensation
+    - Board approved increase in repurchase plan to $20 billion
+
+Non-financial KPIs:
+    - Customer revenue attrition at its lowest level in Salesforce's 24-year history
+    - 8 of 13 industry clouds grew above 50% ARR in the quarter
+    - Top 10 wins in the quarter included five or more Salesforce clouds. Top 5 customer wins included seven or more Salesforce clouds.

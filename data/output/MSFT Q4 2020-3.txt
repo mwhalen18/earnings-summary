@@ -1,0 +1,93 @@
+General Financial Performance
+    - Key Numbers:
+        * Revenue was $38 billion, up 13% YoY
+    - Drivers of value:
+        * Increased usage and demand for cloud services
+        * Rise in remote working, learning, and leisure scenarios due to COVID-19
+        * Long-term customer commitment to the Microsoft cloud platform
+    - Additional Information:
+        * 94% of revenue was annuity-based
+
+Key Topic/ KPI: Commercial cloud business
+    - Key Numbers:
+        * Commercial cloud revenue grew 30% to $14.3 billion
+        * For the fiscal year, it surpassed $50 billion for the first time 
+    - Drivers of value:
+        * Consistently renewing execution of Azure contracts 
+        * Increased large, long-term Azure contracts
+    - Additional Information:
+        * The cloud business helped deliver record results this fiscal year
+
+Product: Azure 
+    - Timelines: N/A
+    - Future plans and Strategy:
+        * Continue to expand Azure as the world's computer to meet customer needs
+        * Further development of Azure Arc
+        * Expand offering to telecom operators as they move to 5G
+        * Invest in meeting the accelerating adoption of IoT across industries
+    - Areas of excitement:
+        * Azure supporting essential workloads for organizations
+        * Acceleration of hybrid innovation meeting customer needs
+        * Azure's limitless data and analytics capabilities deliver a cloud-native data estate
+    - Challenges: Securing customers' growing IoT deployments
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * Azure cognitive services processed 13.5 billion transactions in June
+        * 2.5 billion messages sent and 9 million hours of speech transcribed
+        * Companies across industries such as Bridgestone, UnitedHealth Group, and EY rely on Azure 
+        * Microsoft's acquisition of CyberX aims to help secure customer's IoT deployments
+
+Product: Microsoft 365 and Teams
+    - Timelines: N/A
+    - Future plans and Strategy:
+        * Integrate LinkedIn Learning within Teams
+        * Continue the integration of Office collaboration with Teams
+    - Areas of excitement:
+        * Record usage of Teams during the pandemic, with users generating more than 5 billion meeting minutes in a day 
+        * Growth of number of large organizations utilizing Teams
+    - Challenges: N/A
+    - Associated costs: N/A
+    - Projections: Growth of Microsoft 365 premium offerings
+    - Key Information:
+        * More than 150 million students and teachers globally rely on Microsoft's tools
+
+Product: Dynamics 365
+    - Timelines: N/A
+    - Future plans and Strategy:
+        * Help organizations in every industry digitize their end-to-end business operations
+    - Areas of excitement:
+        * Dynamics 365 is gaining new customers across industries and its fastest-growing application is customer service
+        * Dynamics 365 commerce, finance, and supply chain management have over 4,500 organizations as users
+    - Challenges: N/A
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * Organizations like Walgreens Boots Alliance and Chipotle using Dynamics 365 to offer more personalized customer experiences
+
+Product: LinkedIn 
+    - Timelines: N/A
+    - Future plans and Strategy:
+        * Continuous improvement of networking and learning platform
+    - Areas of excitement:
+        * Record engagement despite lower hiring needs
+        * Content shared was up nearly 50% year-over-year
+    - Challenges: Revenue headwinds due to decreased hiring needs
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * LinkedIn's professionals watched nearly 4 times the amount of LinkedIn Learning content in June than they did a year ago
+
+Product: Gaming 
+    - Timelines:
+       * Xbox Series X is set to be launched this fall
+    - Future plans and Strategy: 
+      * To bring xCloud to Xbox Game Pass so subscribers can stream games to a phone or a tablet
+    - Areas of excitement:
+        * Record engagement and monetization with Xbox Game Pass seeing record subscriber growth
+        * Minecraft reached a new high of nearly 132 million monthly active users during the quarter
+    - Challenges: N/A
+    - Associated costs: N/A
+    - Projections: N/A
+    - Key Information:
+        * Aims to empower the world's 2 billion gamers to play wherever and whenever they want on any device

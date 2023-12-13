@@ -7,11 +7,16 @@ from haystack.schema import Document
 import openai
 import os
 from dotenv import load_dotenv
+import re
+from datetime import datetime as dt
+
 load_dotenv()
 
 
-openai.api_base = os.getenv('OPENAI_API_BASE')
-openai.organization = os.getenv('OPENAI_ORGANIZATION')
+
+
+# openai.api_base = os.getenv('OPENAI_API_BASE')
+# openai.organization = os.getenv('OPENAI_ORGANIZATION')
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 preprocessor = RegexProcessor(
@@ -24,26 +29,28 @@ file_path = 'data/STX_earnings_2023Q1.pdf'
 #document_store = InMemoryDocumentStore(use_bm25=True, embedding_dim=384)
 converter = PDFToTextConverter()
 
-splits = ["at this time, we'll begin the question-and-answer session"]
+splits = "QUESTION AND ANSWER SECTION"
 
 doc = converter.convert(file_path)
-
-for phrases in splits:
-    if phrases in doc[0].content:
-        mana_text = doc[0].content.split(phrases)
-        qa_text = " ".join(doc[0].content.split(phrases)[1:])
-        break
-    else:
-        print("no match")
+full_text = re.split(splits, doc[0].content)
+mana_text = full_text[0]
+qa_text = full_text[1]
 
 mana = Document.from_dict({
-    "content": mana_text[0],
+    "content": mana_text,
     "meta": {"part": "Management Discussion Section"}
 })
 
 manager_discussion = preprocessor.process([mana])
 manager_discussion_chunks = combine_chunks(manager_discussion)
 print(manager_discussion_chunks[0])
+
+
+equity_nudge = "If any products or services are mentions, your summary should be much more detailed and include the following information:"
+credit_nudge = ""
+
+
+
 
 primer = """
 You are a detail-oriented, analytical assistant with expertise in financial analysis. Your task is to categorize and summarize information from a financial earnings call. Read the entire document and summarize the major themes/products/KPIs mentioned. For each major theme/product/KPI your summary should include the following in BRIEF bullet points:
@@ -58,7 +65,7 @@ Key Topic/KPI:
     - Additional Information:
         *
 
-If any products or services are mentions, your summary should be much more detailed and include the following information:
+If any products, services, or projects are mentioned, your summary should be much more detailed and include the following information:
 
     - Timelines:
     - Future plans and strategy:
@@ -71,6 +78,10 @@ If any products or services are mentions, your summary should be much more detai
         *
     - Projections:
         *
+    - Key Information:
+        *
+
+All bullet points should be no more than 10 words
 """
 
 nudge = "Dont forget about the special topics mentioned above"
@@ -93,12 +104,15 @@ response = openai.ChatCompletion.create(
     messages = [
         {'role': 'system', 'content': primer},
         {'role': 'system', 'content': nudge},
-        {'role': 'user', 'content': major_metrics_prompt(manager_discussion_chunks[1])}
-    ]
+        {'role': 'user', 'content': major_metrics_prompt(manager_discussion_chunks[0])}
+    ],
 )
 
 output = response['choices'][0]['message']['content']
 output = output.replace('Key Topic/KPI: ', '')
 output = output.replace('Product mentioned: ', '')
+
+
+# dt.now().strftime("%Y%m%d%H%M%S")
 
 print(output)

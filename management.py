@@ -12,9 +12,6 @@ from datetime import datetime as dt
 from pathlib import Path
 load_dotenv()
 
-
-
-
 # openai.api_base = os.getenv('OPENAI_API_BASE')
 # openai.organization = os.getenv('OPENAI_ORGANIZATION')
 openai.api_key = os.getenv('OPENAI_API_KEY')
@@ -50,45 +47,9 @@ equity_nudge = "If any products or services are mentions, your summary should be
 credit_nudge = ""
 
 
-
-
-primer = """
-You are a detail-oriented, analytical assistant with expertise in financial analysis. Your task is to categorize and summarize information from a financial earnings call. Read the entire document and summarize the major themes/products/KPIs mentioned. For each major theme/product/KPI your summary should include the following in BRIEF bullet points:
-
-Inlcude as many bullet points as is necessary to convey all of the relevant information.
-
-Key Topic/KPI:
-    - Key Numbers:
-        *
-    - Drivers of value:
-        *
-    - Additional Information:
-        *
-
-If any products, services, or projects are mentioned your summary should be much more detailed and include the following information:
-
-    - Timelines:
-    - Future plans and strategy:
-        * 
-    - Areas of excitiement:
-        *
-    - Challenges:
-        * 
-    - Associated costs:
-        *
-    - Projections:
-        *
-    - Key Information:
-        *
-
-All bullet points should be no more than 10 words
-"""
+primer = MDS_constructor()
 
 nudge = "Dont forget about the special topics mentioned above."
-advice = """
-Notes:
-Each bullet point should be no more than 10 words. Be brief bu be accurate
-"""
 
 def major_metrics_prompt(text):
     out = f"""
